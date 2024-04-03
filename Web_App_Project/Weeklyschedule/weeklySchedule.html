@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo-list</title>
+        
+        <!-- font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="./weeklyScheduleStyle/wklyschedule-pageStyle.css">
+        <link rel="stylesheet" href="./weeklyScheduleStyle/wklyschedule-style.css">
+        <!-- script -->
+        <script defer src="./wklyschedule-script/wklyschedule-script.js"></script>
+        <script defer src="../MainScript/basicDisplay.js"></script>
+        <!-- <script defer src="../MainScript/onWinLoad.js"></script> -->
+    </head>
+    <body>
+        <div class="background"></div>
+        
+        <div class="tasks">
+            <div class="tasks-header">
+                <div class="date-container">
+                    <h1 id="today">Today</h1>
+                    <h3 id="date"></h3>
+                </div>
+            </div>
+            
+            <div class="tasks-body">
+                <!-- <div id="btn-container"><button class="btn" id="add-task" onclick="createPageOn(1)">New Task +</button></div> -->
+                <div id="task-container">
+                    <div id="task">
+                        <table id="schedule">
+                            <tr>
+                                <th colspan="2"><button onclick="addRow()" class="schedule-btn">Time/Period</button></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>    
+                        </table>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidenav">
+            <div id="nav-info-container">
+                <div id="space-container">
+                    
+                </div>
+                
+                <div class="page-choices">
+                    <a href="../Weather/index.html" class="choices" id="weather-link"><i class="fa-solid fa-cloud"></i><h3>Weather</h3></a>
+                    <a href="../Task.html" class="choices" id="tasks-link"><i class="fa-solid fa-list-check"></i><h3>Tasks</h3></a>
+                    <a href="#" class="choices" id="weekly-schedule-link"><i class="fa-solid fa-calendar-days"></i><h3>Weekly Schedule</h3><a>
+                        <a href="../shoppingList/shoppingList.html" class="choices" id="shoppinglist-link"><i class="fa-solid fa-cart-shopping"></i><h3>Shopping List</h3></a>
+                </div>
+            </div>
+        </div>
+            
+        <div class="sidenav-toggle">
+            <button id="toggle-on"> <i class="fa-solid fa-bars"></i></button>
+            <button id="toggle-off"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <div class="detail-container">
+            <div id="detail-basic-info">
+                <label for="detail-title">Title:</label>
+                <h3 id="detail-title"></h3>
+                <br>
+                <label for="detail-dueDate">Due date:</label>
+                <h3 id="detail-dueDate"></h3>
+            </div>
+            
+            <label for="detail">detail:</label>
+            <h4 id="detail-content">
+            </h4>
+            <div id="detail-close">
+                <button id="detail-close-btn">close</button>
+            </div>
+        </div>
+    </body>
+</html>

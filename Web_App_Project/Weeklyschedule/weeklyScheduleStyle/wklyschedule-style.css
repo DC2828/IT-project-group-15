@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.delete-btn,.schedule-btn {
+    background-color: orange;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+.delete-btn:hover,.schedule-btn:hover{
+    background-color: black;
+    color: orange;
+}
+
+
+input[type="text"] {
+    width: 90%;
+}

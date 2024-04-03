@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        
+        <!-- font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        
+        
+        <!-- Weather CSS -->
+        <link rel="stylesheet" href="./weather-style/weather-style.css">
+        <link rel="stylesheet" href="./weather-style/weather-styleWeather.css">
+
+        <!-- script -->
+        <script defer src="../MainScript/basicDisplay.js"></script>
+        <script defer src="./weather-script/script.js"></script>
+    </head>
+    <body>
+        <div class="background"></div>
+        
+        <div class="tasks">
+            <div class="tasks-header">
+                <div class="date-container">
+                    <h1 id="today">Today</h1>
+                    <h3 id="date"></h3>
+                </div>
+            </div>
+
+            <div class="tasks-body">
+                <div id="task-container">
+                   <div id="task">
+                    <div id="location">
+                      <h2>Your Location</h2>
+                      <select name="places" id="hkPlaces">
+                        <option value="Hong Kong Observatory">Hong Kong Observatory</option>
+                        <option value="King's Park">King's Park</option>
+                        <option value="Wong Chuk Hang">Wong Chuk Hang</option>
+                        <option value="Ta Kwu Ling">Ta Kwu Ling</option>
+                        <option value="Lau Fau Shan">Lau Fau Shan</option>
+                        <option value="Tai Po">Tai Po</option>
+                        <option value="Sha Tin">Sha Tin</option>
+                        <option value="Tuen Mun">Tuen Mun</option>
+                        <option value="Tseung Kwan O">Tseung Kwan O</option>
+                        <option value="Sai Kung">Sai Kung</option>
+                        <option value="Cheung Chau">Cheung Chau</option>
+                        <option value="Chek Lap Kok">Chek Lap Kok</option>
+                        <option value="Tsing Yi">Tsing Yi</option>
+                        <option value="Shek Kong">Shek Kong</option>
+                        <option value="Tsuen Wan Ho Koon">Tsuen Wan Ho Koon</option>
+                        <option value="Tsuen Wan Shing Mun Valley">Tsuen Wan Shing Mun Valley</option>
+                        <option value="Hong Kong Park">Hong Kong Park</option>
+                        <option value="Shau Kei Wan">Shau Kei Wan</option>
+                        <option value="Kowloon City">Kowloon City</option>
+                        <option value="Happy Valley">Happy Valley</option>
+                        <option value="Wong Tai Sin">Wong Tai Sin</option>
+                        <option value="Stanley">Stanley</option>
+                        <option value="Kwun Tong">Kwun Tong</option>
+                        <option value="Sham Shui Po">Sham Shui Po</option>
+                        <option value="Kai Tak Runway Park">Kai Tak Runway Park</option>
+                        <option value="Yuen Long Park">Yuen Long Park</option>
+                        <option value="Tai Mei Tuk">Tai Mei Tuk</option>
+                      </select>
+                      <div id = "weatherAlignment">
+                        <div id="weatherWarnings"></div>
+                      </div>
+                    </div>
+                    <div id="columnContainer">
+                      <div id="row1">
+                        <div id="additionalInfo">
+                          <h2 id="generalSituation">Today Forecast</h2>
+                          <p id="todayInfo">...</p>
+                          <div id="buttonContainer">
+                            <button onclick = "openCloseForcast()" id="nineDayWeatherBtn">9-day Weather Forecast</button>
+                          </div>
+                        </div>
+                        <button class="buttonForInfo" onclick="openInfo()"></button>
+                      </div>
+                      <div id="columnOne">
+                        <div id="imageContainer">
+                          <img src="" id="weatherIcon" alt="Weather Icon">
+                        </div>
+                        <input id="Temperature" type="text" value="None" readonly>
+                      </div>
+                      <div id="columnTwo">
+                        <div id="row">
+                          <h3>Humidity</h3>
+                          <img src="imagesForDesign/water.png" id="water">
+                        </div>
+                        <input id="Humidity" type="text" value="None" readonly>
+                      </div>
+                      <div id="columnThree">
+                        <div id="row2">
+                          <h3>UV Index</h3>
+                          <img src="imagesForDesign/sun.png" id="sun">
+                        </div>
+                        <input id="uvIndex" type="text" value="0" readonly>
+                      </div>
+                    </div>
+                    <div id="updateTime">
+                      <h3>Update Time:</h3>
+                      <input id="lastUpdate" type="text" value ="None" readonly>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidenav">
+            <div id="nav-info-container">
+                <div id="space-container">
+                    <!-- <div id="weather-icon"><a href="#" id="weather-link"><img id="sideBarWeatherIcon" src="" alt="Weather Icon"></a></div>
+                    <div id="temperature-container"><h3 id="temperature"></h3></div> -->
+                </div>
+
+                <div class="page-choices">
+                    <a href="#" class="choices" id="weather-link"><i class="fa-solid fa-cloud"></i><h3>Weather</h3></a>
+                    <a href="../Task.html" class="choices" id="tasks-link"><i class="fa-solid fa-list-check"></i><h3>Tasks</h3></a>
+                    <a href="../Weeklyschedule/weeklySchedule.html" class="choices" id="weekly-schedule-link"><i class="fa-solid fa-calendar-days"></i><h3>Weekly Schedule</h3><a>
+                    <a href="../shoppingList/shoppingList.html" class="choices" id="shoppinglist-link"><i class="fa-solid fa-cart-shopping"></i><h3>Shopping List</h3></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidenav-toggle">
+            <button id="toggle-on"> <i class="fa-solid fa-bars"></i></button>
+            <button id="toggle-off"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div id="outsideContainer">
+          <div id="weatherForecastContainer">
+            <button id="closeForecast" onclick="openCloseForcast()">&#x2B9D</button>
+            <div id="insideContainer"></div>
+          </div>
+        </div>
+    </body>
+</html>

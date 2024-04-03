@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>shopping List</title>
+        
+        <!-- font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="./shoppingList-style/shoppingList-pageStyle.css">
+        <link rel="stylesheet" href="./shoppingList-style/shoppingList-style.css">
+        <!-- script -->
+        <script defer src="../MainScript/basicDisplay.js"></script>
+        <script defer src="./shoppingList-script/shoppingList-script.js"></script>
+    </head>
+    <body>
+        <div class="background"></div>
+        
+        <div class="tasks">
+          <div class="tasks-header">
+            <div class="date-container">
+              <h1 id="today">Today</h1>
+              <h3 id="date"></h3>
+            </div>
+          </div>
+           
+          <div class="tasks-body">
+            <div id="task-container">
+              <div id="task">
+                
+                <div id="topic-container">
+                  <h5 id="topic">Shopping List</h5>
+                </div>
+                
+                <div>
+                  <p id="totalDiscountPrice">Total Discount Price: $0.00</p>
+                  <p id="totalPrice">Total Price: $0.00</p>
+                </div>
+
+                <div id="shoppingList">
+                  <div id="btn-container">
+                    <button onclick="addItemPrompt()">Add an item</button>
+                    <button onclick="deleteAllItems()">Delete All Items</button>
+                  </div>
+                  <div id="itemsContainer">
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sidenav">
+            <div id="nav-info-container">
+                <div id="space-container">
+                    
+                </div>
+                
+                <div class="page-choices">
+                    <a href="../Weather/index.html" class="choices" id="weather-link"><i class="fa-solid fa-cloud"></i><h3>Weather</h3></a>
+                    <a href="../Task.html" class="choices" id="tasks-link"><i class="fa-solid fa-list-check"></i><h3>Tasks</h3></a>
+                    <a href="../Weeklyschedule/weeklySchedule.html" class="choices" id="weekly-schedule-link"><i class="fa-solid fa-calendar-days"></i><h3>Weekly Schedule</h3><a>
+                        <a href="#" class="choices" id="shoppinglist-link"><i class="fa-solid fa-cart-shopping"></i><h3>Shopping List</h3></a>
+                </div>
+            </div>
+        </div>
+            
+        <div class="sidenav-toggle">
+            <button id="toggle-on"> <i class="fa-solid fa-bars"></i></button>
+            <button id="toggle-off"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+
+    </body>
+</html>

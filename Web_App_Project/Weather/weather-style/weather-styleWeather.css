@@ -1,0 +1,355 @@
+#task #location{
+  height: 50px;
+  justify-content: left;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#task #location select{
+  border-radius: 30px 30px 30px 30px;
+  height:100%;
+  width: 200px;
+  font-size: large;
+  padding: 12px;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#task #location select option{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: medium;
+}
+
+#task #location #weatherAlignment{
+  width: 100%;
+  margin-right: 46px;
+  display: flex;
+  justify-content: right;
+}
+
+#task #location #weatherWarnings{
+  display: flex;
+  background-color: #191919;
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#task #columnContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#columnOne{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 100%;
+  margin-top: 40px;
+  margin-right: 58px;
+  margin-left: 50px;
+  color: white;
+}
+
+#columnOne #imageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #123B79;
+  border-radius: 40px;
+  width: 170px;
+  height: 170px;
+}
+
+
+#task #columnOne #weatherIcon{
+  width: 9rem;
+  height: 9rem;
+}
+
+#task #columnOne #Temperature
+{
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+}
+
+#task #location{
+  display: flex;
+}
+
+#task #location h2{
+  color: white;
+  font-size: 20px;
+}
+
+#task #columnTwo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 100%;
+  margin-top: -20px;
+  color: white;
+  margin-left: 5px;
+}
+
+#task #columnTwo #row{
+  display: flex;
+  padding-left: 23px;
+}
+
+#task #columnTwo #row h3{
+  font-weight: 400;
+}
+
+#task #columnTwo #water{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+#task #columnTwo #Humidity{
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 35px;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+}
+
+
+#task #columnThree{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 100%;
+  margin-top: -20px;
+  color: white;
+}
+
+#task #columnThree #row2{
+  display: flex;
+  padding-left: 23px;
+}
+
+#task #columnThree #row2 h3{
+  font-weight: 400;
+}
+
+#task #columnThree #sun{
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 5px;
+}
+
+#task #columnThree #uvIndex{
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 35px;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+}
+
+#task #updateTime{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#task #updateTime h3{
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#task #updateTime #lastUpdate{
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  margin-left: -30px;
+}
+
+#task #columnContainer #row1{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  margin-left: -750px;
+}
+
+#task #columnContainer .buttonForInfo{
+  position: absolute;
+  width: 30px;
+  height: 290px;
+  background-color: #131313;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#task #columnContainer .buttonForInfo:after{
+  content: "\27E8";
+  color: #525252;
+  font-size: 32px;
+}
+
+#task #columnContainer .buttonForInfoActive:after{
+  content: "\27E9";
+  color: #525252;
+  font-size: 32px;
+}
+
+#task #columnContainer .buttonForInfo:hover{
+  background-color: #222222;
+  color: #737373;
+}
+
+#task #columnContainer #additionalInfo{
+  max-width: 0px;
+  display: none;
+  overflow: hidden;
+  background-color: #4D4D4D;
+  color: white;
+  width: 300px;
+  height: 290px;
+  margin-left: -300px;
+  border-radius: 20px 0px 0px 20px;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+
+#task #columnContainer #additionalInfo h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+#task #columnContainer #additionalInfo p{
+  background: rgba(0, 0, 0, 0);
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  border: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-weight: 400;
+}
+
+#task #columnContainer #additionalInfo #buttonContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#nineDayWeatherBtn{
+  width: 160px;
+  height: 30px;
+  background-color: #131313;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+#nineDayWeatherBtn:hover{
+  background-color: #fff;
+  color: #131313;
+}
+/* 9 Days Weather Forecast CSS */
+
+#outsideContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -1100px;
+  transition: all 0.2s linear;
+}
+
+#weatherForecastContainer{
+  position: relative;
+  display: flex;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #242424;
+  border-width: 12px;
+  height: 590px;
+  width: 1000px;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+}
+
+#outsideContainer #closeForecast{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: solid;
+  border-color: #fff;
+  background-color: #000000;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+#outsideContainer #closeForecast:hover{
+  color: #4D4D4D;
+  border:2px solid #4D4D4D;
+}
+
+#outsideContainer.forecastOpen{
+  margin-top: 20px;
+}
+
+#outsideContainer #weatherForecastContainer #insideContainer{
+  display: flex;
+  position: absolute;
+  height: 77%;
+  width: 80%;
+  background-color: #323232;
+  margin-top: 70px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: "10px";
+}
